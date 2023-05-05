@@ -1,5 +1,4 @@
 @extends('frontend.layouts.main')
-
 @section('main-container')
   <main>
     <article>
@@ -48,15 +47,9 @@
 
         </div>
       </section>
-
-
-
-
-
       <!-- 
         - #SERVICE
       -->
-
       <section class="service" aria-label="service">
         <div class="container">
 
