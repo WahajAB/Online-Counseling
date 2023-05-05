@@ -77,6 +77,11 @@
     padding: 0;
     box-sizing: border-box;
   }
+  .button-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
   .therapy-option {
     display: inline-block;
     padding: 10px 20px;
@@ -88,16 +93,24 @@
     margin-bottom: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
+    border: none;
+    outline: none;
   }
-  .therapy-option:hover {
+  
+  .therapy-option:hover,
+  .therapy-option:focus {
     background-color: var(--ming);
     color: #fff;
     transition: all 0.3s ease;
   }
-.therapy-option:active {
+  
+  .therapy-option:active,
+  .therapy-option.selected {
     background-color: var(--ming);
     color: #fff;
   }
+  
+  
   li { list-style: none; }
   
   a,
@@ -412,21 +425,7 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
-  .hero-subtitle {
-    color: var(--white);
-    font-weight: var(--fw-500);
-    padding-inline-start: 80px;
-  }
-  
-  .hero-subtitle::before {
-    top: 50%;
-    left: 0;
-    width: 60px;
-    height: 1px;
-    background-color: var(--white);
-  }
-  
+ 
   .hero-title { margin-block: 20px 30px; }
   
   .hero-card {
@@ -435,106 +434,8 @@
     padding: 20px;
   }
   
-  .hero-card .card-text {
-    color: var(--eerie-black);
-    border-block-end: 1px solid var(--midnight-green_a25);
-    padding-block-end: 12px;
-    margin-block-end: 14px;
-  }
-  
-  .hero-card .input-wrapper { position: relative; }
-  
-  .hero-card .input-field {
-    color: var(--eerie-black);
-    border-block-end: 1px solid var(--gainsboro);
-    padding-inline-end: 18px;
-  }
-  
-  .hero-card .input-wrapper ion-icon {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    color: var(--verdigris);
-  }
-  
-  .hero-card .btn {
-    width: 100%;
-    justify-content: center;
-    margin-block-start: 16px;
-  }
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #SERVICE
-  \*-----------------------------------*/
-  
-  .service-list {
-    padding-block: 60px 30px;
-    padding-inline: 25px;
-    display: grid;
-    gap: 30px;
-    border-radius: var(--radius-12);
-    margin-block-start: -60px;
-    background-color: var(--white);
-    box-shadow: var(--shadow-1);
-  }
-  
-  .service-card { text-align: center; }
-  
-  .service-card .card-icon,
-  .btn-circle {
-    max-width: max-content;
-    margin-inline: auto;
-  }
-  
-  .service-card .card-icon { margin-block-end: 25px; }
-  
-  .service-card .card-text { margin-block: 20px 15px; }
-  
-  .service-card .btn-circle {
-    color: var(--verdigris);
-    font-size: 2rem;
-    padding: 18px;
-    border-radius: var(--radius-circle);
-    box-shadow: var(--shadow-2);
-    transition: var(--transition-1);
-  }
-  
-  .service-card .btn-circle:is(:hover, :focus-visible) {
-    background-color: var(--verdigris);
-    color: var(--white);
-  }
- 
-  /*-----------------------------------*\
-    #LISTING
-  \*-----------------------------------*/
-  
-  .listing { background-color: var(--alice-blue); }
-  
-  .listing-card {
-    padding: 25px 16px;
-    display: flex;
-    gap: 20px;
-    border: 2px solid var(--middle-blue-green_40);
-    border-radius: var(--radius-12);
-    transition: var(--transition-1);
-  }
-  
-  .listing-card:is(:hover, :focus-visible) { border-color: var(--verdigris); }
-  
-  .listing-card .card-title {
-    margin-block-end: 5px;
-    font-family: var(--ff-oswald);
-  }
-  
-  .listing-card .card-text { color: var(--midnight-green); }
-  
-  
-  
+
+
   /*-----------------------------------*\
     #FOOTER
   \*-----------------------------------*/
@@ -708,50 +609,6 @@
   /**
      * HERO
      */
-  
-    .hero-title { line-height: 1.125; }
-  
-    .hero .wrapper {
-      display: flex;
-      gap: 16px;
-    }
-  
-    .hero-card .input-wrapper { flex-grow: 1; }
-  
-    .hero-card .input-field { height: 100%; }
-  
-    .hero-card .btn {
-      width: max-content;
-      margin-block-start: 0;
-    }
-    /**
-     * SERVICE
-     */
-  
-    .service-list { grid-template-columns: 1fr 1fr; }
-    /**
-     * ABOUT
-     */
-  
-    .about-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-  
-    .about-banner {
-      max-width: max-content;
-      margin-inline: auto;
-    }
-    /**
-     * LISTING
-     */
-  
-    .listing .grid-list { grid-template-columns: 1fr 1fr; }
-  
-    .listing .grid-list > li:first-child { grid-column: 1 / 3; }
-  
-  
-  
     /**
      * FOOTER
      */
@@ -803,36 +660,10 @@
     }
   
   
-  
-    /**
-     * SERVICE
-     */
-  
-    .service-list { grid-template-columns: repeat(4, 1fr); }
-  
-  
-  
-    /**
-     * ABOUT
-     */
-  
-    .about .container {
-      grid-template-columns: 1fr 0.8fr;
-      align-items: flex-end;
-    }
-  
-    .about-content { padding-block-end: var(--section-padding); }
-  
-    .about-banner { margin-inline-end: -80px; }
-  
-  
-  
     /**
      * BLOG
      */
-  
-    .blog .grid-list { grid-template-columns: 1fr 1fr; }
-  
+
   }
   
   
@@ -886,36 +717,7 @@
       padding-inline: 16px;
       text-transform: capitalize;
     }
-  
-  
-  
-    /**
-     * HERO
-     */
-  
-    .hero .container {
-      grid-template-columns: 0.8fr 1fr;
-      gap: 96px;
-    }
-  
-  
-  
-    /**
-     * LISTING
-     */
-  
-    .listing .grid-list { grid-template-columns: repeat(4, 1fr); }
-  
-  
-  
-    /**
-     * BLOG
-     */
-  
-    .blog .grid-list { grid-template-columns: repeat(3, 1fr); }
-  
-  
-  
+ 
     /**
      * FOOTER
      */
