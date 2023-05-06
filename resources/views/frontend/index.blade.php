@@ -14,31 +14,19 @@
               anywhere and anytime.
             </h1>
 
-            <div class="hero-card" data-reveal="left">
-
-              <p class="title-lg card-text">
-            What type of therapy are you looking for?
-            </p>
 
               <div class="wrapper">
 
                 <div class="input-wrapper title-lg">
-                  <input type="text" name="location" placeholder="Drug addiction, anxiety etc" class="input-field">
+
 
                   <!-- <ion-icon name="arrow-down-circle"></ion-icon> -->
                 </div>
-
-                <button class="btn has-before">
-                  <ion-icon name="search"></ion-icon>
-
-                  <span class="span title-md">Find Now</span>
-                </button>
 
               </div>
 
             </div>
 
-          </div>
 
           <figure class="hero-banner" data-reveal="right">
             <img src="{{url('frontend/images/hero-banner.png')}}" width="590" height="517" loading="eager" alt="hero banner"
@@ -85,7 +73,7 @@
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  <a href="#">Health Problems</a>
+                  <a href="#">Dedicated</a>
                 </h3>
 
                 <p class="card-text">
@@ -107,7 +95,7 @@
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  <a href="#">Pulmonology</a>
+                  <a href="#">No Cost</a>
                 </h3>
 
                 <p class="card-text">
@@ -129,16 +117,12 @@
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  <a href="#">Orthopedics</a>
+                  <a href="#">Helpers</a>
                 </h3>
 
                 <p class="card-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing
                 </p>
-
-                <button class="btn-circle" aria-label="read more about Orthopedics">
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </button>
 
               </div>
             </li>
@@ -151,7 +135,7 @@
       <section class="section listing" aria-labelledby="listing-label">
         <div class="container">
 
-          <ul class="grid-list">
+          <ul class="grid-list  pb-9" >
 
             <li>
               <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">Doctors Listing</p>
@@ -163,11 +147,11 @@
               <div class="listing-card" data-reveal="bottom">
 
                 <div class="card-icon">
-                  <img src="{{url('frontend/images/icon-1.png')}}" width="71" height="71" loading="lazy" alt="icon">
+                  <img src="{{url('frontend/images/icon-1.png')}}" width="75" height="75" loading="lazy" alt="icon">
                 </div>
 
                 <div>
-                  <h3 class="headline-sm card-title">Psychiatry</h3>
+                  <h3 class="headline-sm card-title">Therapy</h3>
 
                   <p class="card-text">Porta velit</p>
                 </div>
@@ -176,14 +160,14 @@
             </li>
 
             <li>
-              <div class="listing-card" data-reveal="bottom">
+              <div class="listing-card" style= data-reveal="bottom">
 
                 <div class="card-icon">
-                  <img src="{{url('frontend/images/icon-2.png')}}" width="71" height="71" loading="lazy" alt="icon">
+                  <img src="{{url('frontend/images/icon-2.png')}}" width="75" height="75" loading="lazy" alt="icon">
                 </div>
 
                 <div>
-                  <h3 class="headline-sm card-title">Gynecology</h3>
+                  <h3 class="headline-sm card-title">Rehab</h3>
 
                   <p class="card-text">Mattis augue</p>
                 </div>
@@ -192,67 +176,7 @@
             </li>
 
             <li>
-              <div class="listing-card" data-reveal="bottom">
 
-                <div class="card-icon">
-                  <img src="{{url('frontend/images/icon-4.png')}}" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Pulmonology</h3>
-
-                  <p class="card-text">Mauris laoreet</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="{{url('frontend/images/icon-5.png')}}" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Orthopedics</h3>
-
-                  <p class="card-text">Convallis vulputate</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="{{url('frontend/images/icon-6.png')}}" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Pediatrics</h3>
-
-                  <p class="card-text">Posuere maecenas</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="{{url('frontend/images/icon-7.png')}}" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Osteology</h3>
-
-                  <p class="card-text">Nisi nullam</p>
-                </div>
-
-              </div>
             </li>
 
           </ul>

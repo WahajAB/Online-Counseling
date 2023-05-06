@@ -22,6 +22,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
+
     protected function redirectTo()
     {
         $userRole = auth()->user()->role;

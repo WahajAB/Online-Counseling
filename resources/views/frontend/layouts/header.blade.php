@@ -1,4 +1,3 @@
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="{{url('frontend/css/home.css')}}">
+
   <link rel="preload" as="image" href="{{url('frontend/images/hero-banner.png')}}">
   <link rel="preload" as="image" href="{{url('frontend/images/hero-bg.png')}}">
 
@@ -18,7 +18,6 @@
 
 <body id="top">
   <div class="preloader" data-preloader>
-    <div class="circle"></div>
   </div>
   <header class="header" data-header>
     <div class="container">
@@ -29,26 +28,11 @@
 
       <nav class="navbar" data-navbar>
 
-        <div class="navbar-top">
-
-          <a href="#" class="logo">
-            <img src="{{url('frontend/images/logo.svg')}}" width="136" height="46" alt="Doclab home">
-          </a>
-
-          <button class="nav-close-btn" aria-label="close menu">
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
-
-        </div>
-
-
-
       </nav>
+      
       <a href="home" class="btn has-before title-md">Home</a>
-      <a href="register" class="btn has-before title-md">Register</a>
-      <a href="login" class="btn has-before title-md">Login</a>
-
-      <div class="overlay" data-nav-toggler data-overlay></div>
+      <a href="{{ route('register') }}" class="btn has-before title-md">Register</a>
+      <a href="{{ route('login') }}" class="btn has-before title-md">Login</a>
 
     </div>
   </header>
