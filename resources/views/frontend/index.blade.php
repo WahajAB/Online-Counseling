@@ -123,6 +123,10 @@
                 <p class="card-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing
                 </p>
+                
+                <button class="btn-circle" aria-label="read more about Pulmonology">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
 
               </div>
             </li>
