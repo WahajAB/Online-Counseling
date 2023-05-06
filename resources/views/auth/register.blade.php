@@ -10,7 +10,7 @@
     <div class="row justify-content-center">
         <div class="col-md-9">
             <div class="card shadow">
-                <div class="card-header text-center" style="font: 12pt bold; font-size: 2rem;">{{ __('Register') }}</div>
+                <div class="card-header text-center" style="font: 12pt bold; font-size: 1.5rem;">{{ __('Register') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
