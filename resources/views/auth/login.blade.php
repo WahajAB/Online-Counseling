@@ -9,7 +9,7 @@
     <div class="row justify-content-center">
         <div class="col-md-9">
             <div class="card shadow">
-                <div class="card-header text-center" style="font: 12pt bold; font-size: 2rem;">{{ __('Login') }}</div>
+                <div class="card-header text-center" style="font: 12pt bold; font-size: 1.5rem;">{{ __('Login') }}</div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}"> @csrf
                         <div class="row mb-3">
@@ -59,7 +59,7 @@
                                 </button>
 
                                 @if (Route::has('password.request'))
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                <a class="btn-link" href="{{ route('password.request') }}">
                                     {{ __('Forgot Your Password?') }}
                                 </a>
                                 @endif
