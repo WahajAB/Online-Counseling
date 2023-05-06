@@ -19,7 +19,7 @@ class HomeController extends Controller
         }
         catch(Exception $e)
         {
-            return redirect()->to('');
+            return redirect()->route('d');
         }
     }
 }
