@@ -2,8 +2,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rehab - home</title>
-  <meta name="title" content="Doclab - home">
+  <title>Palingenesis - Home</title>
+  <meta name="title" content="Palingenesis">
   <meta name="description" content="This is a madical html template made by codewithsadee">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="{{url('frontend/images/logo.svg')}}" width="136" height="46" alt="Doclab home">
+        <img src="{{url('frontend/images/logo.svg')}}" width="136" height="46" alt="Palingenesis">
       </a>
 
       <nav class="navbar" data-navbar>
