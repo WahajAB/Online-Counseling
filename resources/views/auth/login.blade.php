@@ -4,7 +4,7 @@
 <!-- Styles -->
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
-<body style="background-size: cover; font: 10pt; background-image: url('{{url('frontend/images/hero-bg.png')}}">
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-9">
@@ -70,5 +70,5 @@
             </div>
         </div>
     </div>
-</body>
+
 </div> @endsection
