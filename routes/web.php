@@ -20,6 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 Route::get('/user', [App\Http\Controllers\UserController::class, 'showCounselors'])->name('User.index');
-Route::get('/user/message/{id}', [App\Http\Controllers\UserController::class, 'messageCounselor'])->name('message_counselor');
 Route::get('/user/call/{id}', [App\Http\Controllers\UserController::class, 'callCounselor'])->name('call_counselor');
 Route::get('/counselor', [App\Http\Controllers\CounselorController::class, 'index'])->name('Counselor.index');
+Route::get('/counselor/messages', [App\Http\Controllers\CounselorController::class, 'messages'])->name('Counselor.messages');
+Route::get('/user/message/{id}', [App\Http\Controllers\UserController::class, 'messageCounselor'])->name('message_counselor');
+Route::post('/user/messages/{id}', [App\Http\Controllers\UserController::class, 'messageCounselors'])->name('message_counselors');

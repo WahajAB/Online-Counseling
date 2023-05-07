@@ -15,8 +15,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
                     {{ __('You are logged in!') }}
+                    <a href="{{ route('Counselor.messages') }}">View Messages</a>
                 </div>
             </div>
         </div>
