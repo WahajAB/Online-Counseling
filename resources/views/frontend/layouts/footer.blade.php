@@ -1,13 +1,13 @@
 
-<footer class="footer" style="background-image: url({{url('frontend/images/footer-bg.png')}})">
+<footer class="footer" style="margin-top: -4rem; background-image: url({{url('frontend/images/footer-bg.png')}})">
   <div class="container">
 
     <div class="section footer-top">
 
       <div class="footer-brand">
 
-        <a href="#" class="logo">
-          <img src="{{url('frontend/images/logo.svg')}}" width="136" height="46" loading="lazy" alt="Doclab home">
+        <a href="#">
+          
         </a>
 
         <ul class="contact-list has-after">
@@ -74,46 +74,46 @@
       <ul class="footer-list">
 
         <li>
-          <p class="headline-sm footer-list-title">Services</p>
+          <p class="headline-sm footer-list-title"></p>
         </li>
 
         <li>
-          <a href="#" class="text footer-link">add</a>
+          <a href="#"></a>
         </li>
 
         <li>
-          <a href="#" class="text footer-link">some</a>
+          <a href="#"></a>
         </li>
 
         <li>
-          <a href="#" class="text footer-link">bs</a>
+          <a href="#"></a>
         </li>
 
         <li>
-          <a href="#" class="text footer-link">here</a>
+          <a href="#"></a>
         </li>
       </ul>
 
       <ul class="footer-list">
 
         <li>
-          <p class="headline-sm footer-list-title">Useful Links</p>
+          <p class="headline-sm footer-list-title"></p>
         </li>
 
         <li>
-          <a href="#" class="text footer-link">Our Services</a>
+          <a href="#" class="text footer-link"></a>
         </li>
 
         <li>
-          <a href="#" class="text footer-link">Join as a Doctor</a>
+          <a href="#" class="text footer-link"></a>
         </li>
 
         <li>
-          <a href="#" class="text footer-link">New Guests List</a>
+          <a href="#" class="text footer-link"></a>
         </li>
 
         <li>
-          <a href="#" class="text footer-link">The Team List</a>
+          <a href="#" class="text footer-link"></a>
         </li>
 
       </ul>
@@ -127,17 +127,17 @@
       <ul class="social-list">
 
         <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-facebook"></ion-icon>
+          <a href="#">
+            
           </a>
         </li>
         <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-google"></ion-icon>
+          <a href="#">
+            
           </a>
         </li>
-       <li> <a href="#" class="social-link">
-          <ion-icon name="logo-youtube"></ion-icon>
+       <li> <a href="#">
+          
        </a></li>
 
       </ul>
