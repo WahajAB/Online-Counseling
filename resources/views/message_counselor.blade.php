@@ -18,8 +18,7 @@
                             </div>
                         @endif
 
-                        <form method="GET" action="{{ route('message_counselor', $counselor->id) }}">
-                            @csrf
+                        <form method="POST" action="{{ route('message_counselors', ['id' => $counselor->id]) }}">@csrf
 
                             <div class="form-group">
                                 <label for="subject">Subject</label>

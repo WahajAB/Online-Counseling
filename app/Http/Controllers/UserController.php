@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
-
+use App\Models\Message;
 class UserController extends Controller
 {
     /**
@@ -17,18 +17,25 @@ class UserController extends Controller
     }
     public function messageCounselor($id)
     {
-    $counselor = User::findOrFail($id);
-    // Add your logic for messaging the counselor here
-    // ...
-    return view('message_counselor', compact('counselor'));
+        $counselor = User::findOrFail($id);
+        return view('message_counselor', compact('counselor'));
     }
-
+    public function messageCounselors(Request $request, $id)
+    {
+        
+        $message = new Message;
+        $message->user_id = auth()->user()->id;
+        $message->counselor_id = $id;
+        $message->subject = $request->subject;
+        $message->message = $request->message;
+        $message->save();
+    
+        return redirect()->back()->with('status', 'Message sent successfully');
+    }
     public function callCounselor($id)
     {
-    $counselor = User::findOrFail($id);
-    // Add your logic for calling the counselor here
-    // ...
-    return view('call_counselor', compact('counselor'));
+        $counselor = User::findOrFail($id);
+        return view('call_counselor', compact('counselor'));
     }
     public function showCounselors()
     {

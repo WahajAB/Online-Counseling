@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Message;
 use Illuminate\Http\Request;
-
+use App\Models\User;
 class CounselorController extends Controller
 {
     /**
@@ -15,7 +15,13 @@ class CounselorController extends Controller
     {
         $this->middleware('CheckRole:1');
     }
-
+    public function messages()
+    {
+        $counselor_id = auth()->user()->id;
+        $messages = Message::where('counselor_id', $counselor_id)->get();
+    
+        return view('counselor.messages', compact('messages'));
+    }
     /**
      * Show the application dashboard.
      *
