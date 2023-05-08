@@ -2,7 +2,7 @@
 @section('main-container')
     <main>
         <article>
-            <section class="section hero" style="background-image: url('{{ url('frontend/images/hero-bg.png') }}"
+            <section class="section hero" style="background-image: url('{{ url('frontend/images/hero-bg.png') }};"
                 aria-label="home">
                 <div class="container">
                     <div class="hero-content">

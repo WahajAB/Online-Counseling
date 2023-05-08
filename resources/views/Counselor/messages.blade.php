@@ -15,23 +15,32 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    <table class="table">
+                    @php
+                    $sortedMessages = $messages->sortByDesc('created_at');
+                    @endphp
+                    <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th>From</th>
                                 <th>Subject</th>
                                 <th>Message</th>
                                 <th>Received</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($messages as $message)
+                            @foreach($sortedMessages as $message)
                                 <tr>
                                     <td>{{ $message->user->name }}</td>
                                     <td>{{ $message->subject }}</td>
                                     <td>{{ $message->message }}</td>
                                     <td>{{ $message->created_at }}</td>
+                                    <td>
+                                        <form method="POST">
+                                            @csrf
+                                            <button type="submit" class="btn btn-primary">Reply</button>
+                                        </form>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>

@@ -15,6 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
     <script src="{{ url('frontend/js/script.js') }}"></script>
+    
     <!--
         - ionicon link
       -->
@@ -43,7 +44,7 @@ footer {
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
-<body style="background-size: cover; font: 10pt; background-image: url('{{url('frontend/images/hero-bg.png')}}">
+<body style="background-size: cover; background-image: url('{{url('frontend/images/hero-bg.png')}}">
     <div id="app" >
         <nav class="navbar navbar-expand-md shadow-sm "  style="padding: 12px 36px; background-color: #005761;">
             <div class="container">
@@ -99,15 +100,15 @@ footer {
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4" style="margin-top: 2rem;">
             @yield('content')
         </main>
         
     </div>
     <footer class="footer" style="background-size: cover; background-image: url({{url('frontend/images/footer-bg.png')}})">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
+          <div class="row" style="margin-top: 1rem;">
+            <div class="col-sm-6" style="padding-left: 6rem;">
               <h5>About Us</h5>
               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
               <address class="address">
@@ -115,7 +116,7 @@ footer {
                 <span class="text">2416 Mapleview Drive <br>Tampa, FL 33634</span>
               </address>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" style="padding-left: 17rem;">
               <h5>Contact Us</h5>
               <ul class="contact-list has-after">
                 <li class="contact-item">
@@ -140,8 +141,8 @@ footer {
             </div>
           </div>
           
-          <hr>
-          <p style="text-align: center;">&copy; Rehab 2023 | All Rights Reserved by DeezGroup</p>
+          <hr style="margin-top: -0.1rem;">
+          <p style="text-align: center; margin-bottom: -0.3rem; margin-top: -0.3rem;">&copy; Rehab 2023 | All Rights Reserved by DeezGroup</p>
         </div>
       </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"></script>
