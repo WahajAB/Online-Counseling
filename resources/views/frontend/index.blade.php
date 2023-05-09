@@ -2,7 +2,7 @@
 @section('main-container')
     <main>
         <article>
-            <section class="section hero" style="background-image: url('{{ url('frontend/images/hero-bg.png') }};"
+            <section class="section hero" style="background-image: url('{{ url('frontend/images/hero-bg.png') }}');"
                 aria-label="home">
                 <div class="container">
                     <div class="hero-content">
@@ -47,7 +47,7 @@
                                 </div>
 
                                 <h3 class="headline-sm card-title">
-                                    <a href="#">Professional</a>
+                                    <p>Professional</p>
                                 </h3>
 
                                 <p class="card-text">
@@ -67,7 +67,7 @@
                                 </div>
 
                                 <h3 class="headline-sm card-title">
-                                    <a href="#">Dedicated</a>
+                                    <p>Dedicated</p>
                                 </h3>
 
                                 <p class="card-text">
@@ -88,7 +88,7 @@
                                 </div>
 
                                 <h3 class="headline-sm card-title">
-                                    <a href="#">No Cost</a>
+                                    <p>No Cost</p>
                                 </h3>
 
                                 <p class="card-text">
@@ -108,7 +108,7 @@
                                 </div>
 
                                 <h3 class="headline-sm card-title">
-                                    <a href="#">Private</a>
+                                    <p>Private</p>
                                 </h3>
 
                                 <p class="card-text">
@@ -125,9 +125,9 @@
             </section>
 
             <section class="section listing" aria-labelledby="listing-label">
-                <div class="container">
+                <div class="container" style="margin-top: -0.5rem; margin-bottom: -4rem;">
 
-                    <ul class="grid-list  pb-9">
+                    <ul class="grid-list pb-9">
 
                         <li>
                             <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">World Class Experts</p>
