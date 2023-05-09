@@ -7,10 +7,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header text-center" style="font-weight:700; font-size: 1.5rem;">{{ __('Counselors') }}</div>
+                <div class="card-header text-center" style="font-weight:700; font-size: 1.5rem;">{{ __('User Dashboard') }}</div>
 
                 <div class="card-body" style="display: flex;  justify-content: center; align-items: center;">
-                    <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#counselorsModal">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#counselorsModal">
                         {{ __('View Counselors') }}
                     </button>
 

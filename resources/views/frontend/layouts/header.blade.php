@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="{{url('frontend/css/home.css')}}">
-
   <link rel="preload" as="image" href="{{url('frontend/images/hero-banner.png')}}">
   <link rel="preload" as="image" href="{{url('frontend/images/hero-bg.png')}}">
 
