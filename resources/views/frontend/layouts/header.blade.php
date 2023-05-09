@@ -24,13 +24,12 @@
         <img src="{{url('frontend/images/logo.svg')}}" width="136" height="46" alt="Palingenesis">
       </a>
 
-      <nav class="navbar" data-navbar>
-
-      </nav>
-      
-      <a href="home" class="btn has-before title-md">Home</a>
-      <a href="{{ route('register') }}" class="btn has-before title-md">Register</a>
-      <a href="{{ route('login') }}" class="btn has-before title-md">Login</a>
-
+    <div class="navbar-collapse" style="padding-left: 6rem;">
+        <ul class="navbar-nav">
+          <a href="home" class="nav-item btn has-before title-md" style="display: inline-block;">Home</a>
+          <a href="{{ route('register') }}" class="nav-item btn has-before title-md" style="display: inline-block;">Register</a>
+          <a href="{{ route('login') }}" class="nav-item btn has-before title-md" style="display: inline-block; margin-top: -0.5rem;">Login</a>
+        </ul>
+     </div>
     </div>
   </header>

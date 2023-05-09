@@ -294,7 +294,7 @@
   /*-----------------------------------*\
     #HEADER
   \*-----------------------------------*/
-  
+
   .header .btn { display: none; }
   
   .header {
@@ -667,10 +667,10 @@
   \*-----------------------------------*/
   
   /**
-   * responsive for large than 468px screen
+   * responsive for large than 768px screen
    */
   
-  @media (min-width: 468px) {
+  @media (min-width: 768px) {
   
     /**
      * CUSTOM PROPERTY
@@ -689,7 +689,6 @@
     /**
      * REUSED STYLE
      */
-  
     .container {
       max-width: 750px;
       width: 100%;
