@@ -12,12 +12,6 @@
                         <h3 style="display: inline-block; margin-left: 8rem; font-weight:700;">{{$counselor->name }}</h3>
                       </div>
                     <div class="card-body">
-                        @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
-
                         <form method="POST" action="{{ route('message_counselors', ['id' => $counselor->id]) }}">@csrf
 
                             <div class="form-group">
