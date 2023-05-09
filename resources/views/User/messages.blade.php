@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header text-center" style="font-size: 1.5rem; font-weight:700;">{{ __('Counselor Messages') }}</div>
+                <div class="card-header text-center" style="font-size: 1.5rem; font-weight:700;">{{ __('User Messages') }}</div>
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
@@ -34,7 +34,7 @@
                                         <td>{{ $message->message }}</td>
                                         <td>{{ $message->created_at }}</td>
                                         <td>
-                                            <form method="GET" action="{{ route('reply_user', ['id' => $message->user->id]) }}">@csrf
+                                            <form method="GET" action="{{ route('message_counselor', ['id' => $message->user->id]) }}">@csrf
                                                 <button type="submit" class="btn btn-primary">Reply</button>
                                             </form>
                                         </td>

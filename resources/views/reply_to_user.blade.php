@@ -8,8 +8,8 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
-                        <h3 style="display: inline-block; font-weight:700;">Counselor Name:</h3>
-                        <h3 style="display: inline-block; margin-left: 8rem; font-weight:700;">{{$counselor->name }}</h3>
+                        <h3 style="display: inline-block; font-weight:700;">User Name:</h3>
+                        <h3 style="display: inline-block; margin-left: 8rem; font-weight:700;">{{$user->name }}</h3>
                       </div>
                     <div class="card-body">
                         @if (session('status'))
@@ -17,7 +17,7 @@
                             {{ session('status') }}
                         </div>
                         @endif
-                        <form method="POST" action="{{ route('message_counselors', ['id' => $counselor->id]) }}">@csrf
+                        <form method="POST" action="{{ route('reply_users', ['id' => $user->id]) }}">@csrf
 
                             <div class="form-group">
                                 <label for="subject">Subject</label>

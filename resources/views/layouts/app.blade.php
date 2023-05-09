@@ -19,6 +19,7 @@
       -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="/jquery/jquery-3.6.0.min.js"></script>
     <style>
 html {
   height: 100%;
@@ -73,8 +74,8 @@ footer {
                                 <a id="navbarDropdown" class="btn btn-primary dropdown-toggle" href="/user" role="button" data-bs-toggle="dropdown">
                                     {{ Auth::user()->name }}
                                 </a>
-
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu dropdown-menu-end mt-1" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="{{ route('login') }}">{{ __('Dashboard') }}</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
