@@ -2,8 +2,6 @@
 
 @section('content')
 <!-- Styles -->
-<link rel="stylesheet" href="{{url('frontend/assets/css/register.css')}}">
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
 
 <div class="container">
