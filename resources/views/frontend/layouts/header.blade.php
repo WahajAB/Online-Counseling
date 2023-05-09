@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="{{url('frontend/css/home.css')}}">
   <link rel="preload" as="image" href="{{url('frontend/images/hero-banner.png')}}">
   <link rel="preload" as="image" href="{{url('frontend/images/hero-bg.png')}}">
-
 </head>
 
 <body id="top">
