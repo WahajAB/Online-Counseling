@@ -22,6 +22,21 @@ class CounselorController extends Controller
     
         return view('counselor.messages', compact('messages'));
     }
+    public function replyUser($id)
+    {
+        $user = User::findOrFail($id);
+        return view('reply_to_user', compact('user'));
+    }
+    public function replyUsers(Request $request, $id)
+    {
+        $message = new Message;
+        $message->user_id = auth()->user()->id;
+        $message->counselor_id = $id;
+        $message->subject = $request->subject;
+        $message->message = $request->message;
+        $message->save();
+        return redirect()->back()->with('status', 'Message sent successfully');
+    }
     /**
      * Show the application dashboard.
      *

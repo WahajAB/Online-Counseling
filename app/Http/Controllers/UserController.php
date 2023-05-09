@@ -15,6 +15,13 @@ class UserController extends Controller
     {
         $this->middleware('CheckRole:0');
     }
+    public function messages()
+    {
+        $user_id = auth()->user()->id;
+        $messages = Message::where('counselor_id', $user_id)->get();
+    
+        return view('user.messages', compact('messages'));
+    }
     public function messageCounselor($id)
     {
         $counselor = User::findOrFail($id);

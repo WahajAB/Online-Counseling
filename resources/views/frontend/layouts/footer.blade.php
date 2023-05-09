@@ -4,8 +4,8 @@
     .footer {
     background-color: #005761;
     color: white;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2.6rem;
+    padding-bottom: 2.6rem;
   }
   
   .footer h5 {
@@ -98,7 +98,7 @@
       </div>
     </div>
     
-    <hr style="margin-top: 1rem;">
-    <p style="text-align: center; margin-bottom: 1rem; margin-top: 1.5rem;">&copy; Rehab 2023 | All Rights Reserved by DeezGroup</p>
+    <hr style="margin-top: 3rem;">
+    <p style="text-align: center; margin-bottom: 1rem; margin-top: 3.4rem;">&copy; Rehab 2023 | All Rights Reserved by DeezGroup</p>
   </div>
 </footer>
