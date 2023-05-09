@@ -17,14 +17,13 @@
     --black: hsl(0, 0%, 0%);
     --ff-oswald: 'Oswald', sans-serif;
     --ff-rubik: 'Rubik', sans-serif;
-    
+    --text-color: #ffffff;
     --headline-lg: 5rem;
     --headline-md: 3rem;
     --headline-sm: 2rem;
     --title-lg: 1.8rem;
     --title-md: 1.5rem;
     --title-sm: 1.4rem;
-    
     --fw-500: 500;
     --fw-700: 700;
   
@@ -519,12 +518,12 @@
     padding: 25px 16px;
     display: flex;
     gap: 20px;
-    border: 2px solid var(--middle-blue-green_40);
+    border: 2px solid var(--verdigris);
     border-radius: var(--radius-12);
     transition: var(--transition-1);
   }
   
-  .listing-card:is(:hover, :focus-visible) { border-color: var(--verdigris); }
+
   
   .listing-card .card-title {
     margin-block-end: 5px;
@@ -668,10 +667,10 @@
   \*-----------------------------------*/
   
   /**
-   * responsive for large than 768px screen
+   * responsive for large than 468px screen
    */
   
-  @media (min-width: 768px) {
+  @media (min-width: 468px) {
   
     /**
      * CUSTOM PROPERTY
@@ -699,7 +698,7 @@
     /**
      * HEADER
      */
-  
+
     .header .btn { display: block; }
   
     .nav-open-btn { margin-inline-start: auto; }
@@ -936,13 +935,7 @@
   
     .contact-list { justify-content: space-between; }
   
-    .contact-list::after {
-      top: 0;
-      left: 50%;
-      width: 2px;
-      height: 100%;
-      background-color: var(--white_a20);
-    }
+
   
     .contact-item { margin-block-start: 0; }
   
