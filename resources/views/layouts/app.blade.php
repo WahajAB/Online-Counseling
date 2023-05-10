@@ -48,7 +48,7 @@ footer {
         <nav class="navbar navbar-expand-md shadow-sm"  style="padding: 12px 36px; background-color: #005761;">
             <div class="container">
                 <a class="btn btn-primary" style="font-size: 1.1rem;"href="{{ url('/') }}">
-                    {{ config('app.name', 'Palingenesis') }}
+                   Palingenesis
                 </a>
                 <a class="btn btn-primary navbar-toggler" data-bs-toggle="collapse" style="background-color: hsl(183, 100%, 36%);" data-bs-target="#navbarSupportedContent">
                     <span class="navbar-toggler-icon"></span>
