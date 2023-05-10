@@ -22,6 +22,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.metered.ca/sdk/video/1.4.5/sdk.min.js"></script>
     <style>
         html {
             height: 100%;
@@ -45,7 +46,8 @@
 
     <script src="https://cdn.metered.ca/sdk/video/1.4.5/sdk.min.js"></script>
 
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['resources/sass/app.scss','resources/js/app.js'])
+
 </head>
 
 <body style="background-size: auto; background-image: url('{{ url('frontend/images/hero-bg.png') }}');">
@@ -55,11 +57,8 @@
                 <a class="btn btn-primary" style="font-size: 1.1rem;"href="{{ url('/') }}">
                     Palingenesis
                 </a>
-                <a class="btn btn-primary navbar-toggler" data-bs-toggle="collapse"
-                    style="background-color: hsl(183, 100%, 36%);" data-bs-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
-                </a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="navbar-collapse">
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
