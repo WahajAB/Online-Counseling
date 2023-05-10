@@ -21,23 +21,23 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="/jquery/jquery-3.6.0.min.js"></script>
     <style>
-html {
-  height: 100%;
-}
+        html {
+          height: 100%;
+        }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
+        body {
+          display: flex;
+          flex-direction: column;
+          min-height: 100%;
+        }
 
-main {
-  flex: 1;
-}
+        main {
+          flex: 1;
+        }
 
-footer {
-  margin-top: auto;
-}
+        footer {
+          margin-top: auto;
+        }
 
     </style>
     <!-- Scripts -->
