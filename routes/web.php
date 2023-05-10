@@ -1,7 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\callcontroller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MeetingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +30,19 @@ Route::get('/user/message/{id}', [App\Http\Controllers\UserController::class, 'm
 Route::get('/counselor/message/{id}', [App\Http\Controllers\CounselorController::class, 'replyUser'])->name('reply_user');
 Route::post('/user/messages/{id}', [App\Http\Controllers\UserController::class, 'messageCounselors'])->name('message_counselors');
 Route::post('/counselor/messages/{id}', [App\Http\Controllers\CounselorController::class, 'replyUsers'])->name('reply_users');
+
+
+Route::get('/call', [callcontroller::class, 'index'])->name('call');
+
+Route::post("/createMeeting", [MeetingController::class, 'createMeeting'])->name("createMeeting");
+
+Route::post("/validateMeeting", [MeetingController::class, 'validateMeeting'])->name("validateMeeting");
+
+Route::get("/meeting/{meetingId}", function($meetingId) {
+
+    $METERED_DOMAIN = env('METERED_DOMAIN');
+    return view('calling/meeting', [
+        'METERED_DOMAIN' => $METERED_DOMAIN,
+        'MEETING_ID' => $meetingId
+    ]);
+});
