@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
 
 @section('content')
 <div class="container">
