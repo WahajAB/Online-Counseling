@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Http;
-
+use App\Models\Message;
 use Illuminate\Http\Request;
 
 class MeetingController extends Controller
 {
-    public function createMeeting(Request $request) {
-        
+    public function createMeeting(Request $request, $id) {
         $METERED_DOMAIN = env('METERED_DOMAIN');
         $METERED_SECRET_KEY = env('METERED_SECRET_KEY');
     
@@ -20,6 +19,13 @@ class MeetingController extends Controller
         ]);
 
         $roomName = $response->json("roomName");
+        $message = new Message;
+        $message->user_id = auth()->user()->id;
+        $message->counselor_id = $id;
+        $name = auth()->user()->name;
+        $message->subject = "$name is inviting you to a meeting!";
+        $message->message = "Please Click the Following Link to Join the Meeting: http://127.0.0.1:8000/meeting/{$roomName}";
+        $message->save();
         
         return redirect("/meeting/{$roomName}"); // We will update this soon.
     }
@@ -39,7 +45,7 @@ class MeetingController extends Controller
         if ($response->status() === 200)  {
             return redirect("/meeting/{$roomName}"); // We will update this soon
         } else {
-            return redirect("/?error=Invalid Meeting ID");
+            return redirect()->back()->with('failure', 'No such room exists.');
         }
     }
 }

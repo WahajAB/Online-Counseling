@@ -8,7 +8,7 @@ class callcontroller extends Controller
 {
     public function index($id)
     {
-        $counselor = User::findOrFail($id);
+        $counselor = $id;
         return view('calling.welcome', compact('counselor'));
     }
 }
