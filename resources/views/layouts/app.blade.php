@@ -16,6 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
+    <link href="resources\css\app.css" rel="stylesheet">
     <!--
         - ionicon link
       -->
@@ -32,12 +33,15 @@
             display: flex;
             flex-direction: column;
             min-height: 100%;
+            font-family: "Nunito";
         }
 
         main {
             flex: 1;
         }
-
+        p,h1,h2,h3,h4,h5,h6,a{
+            font-family: "Nunito";
+        }
         footer {
             margin-top: auto;
         }
@@ -50,7 +54,7 @@
 
 </head>
 
-<body style="background-size: auto; background-image: url('{{ url('frontend/images/hero-bg.png') }}');">
+<body style="background-size: auto;font-family:'Nunito' background-image: url('{{ url('frontend/images/hero-bg.png') }}');">
     <div id="app">
         <nav class="navbar navbar-expand-md shadow-sm" style="padding: 12px 36px; background-color: #005761;">
             <div class="container">
@@ -69,7 +73,6 @@
                                         style="font-size: 1.1rem;">Login</a>
                                 </li>
                             @endif
-
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a href="{{ route('register') }}" class="btn btn-primary"
@@ -111,12 +114,10 @@
         <div class="container">
             <div class="row" style="margin-top: 0.5rem;">
                 <div class="col-sm-6" style="padding-left: 6rem;">
-                    <h5>About Us</h5>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
-                    <address class="address">
-                        <ion-icon name="map-outline"></ion-icon>
-                        <span class="text">2416 Mapleview Drive <br>Tampa, FL 33634</span>
-                    </address>
+                    <h5><u>About Us</u></h5>
+                    <p>
+                    At Palingenesis, we are committed to providing a safe, inclusive, and compassionate space for individuals to access free therapy, empowering them to thrive and prioritize their mental well-being.</p>
+                    
                 </div>
                 <div class="col-sm-6" style="padding-left: 17rem;">
                     <h5>Contact Us</h5>
@@ -125,20 +126,18 @@
                             <div class="item-icon">
                                 <ion-icon name="mail-open-outline"></ion-icon>
                             </div>
-                            <div>
-                                <p>Main Email : <a href="mailto:contact@website.com"
-                                        class="contact-link">contact@&shy;website.com</a></p>
-                                <p>Inquiries : <a href="mailto:Info@mail.com" class="contact-link">Info@mail.com</a></p>
+                            <div style="padding-bottom: 5px;">
+                                <p>Email : <a href="mailto:contact@website.com"
+                                        class="contact-link">Palingenesis@gmail.com</a></p>
                             </div>
                         </li>
                         <li class="contact-item">
                             <div class="item-icon">
-                                <ion-icon name="call-outline"></ion-icon>
+                                <ion-icon name="logo-linkedin"></ion-icon>
                             </div>
                             <div>
-                                <p>Office Telephone : <a href="tel:0029129102320" class="contact-link">0029129102320</a>
+                                <p> Linkedin: <a href="linkedin.com/in/Palingenesis" >linkedin.com/in/Palingenesis</a>
                                 </p>
-                                <p>Mobile : <a href="tel:000232439493" class="contact-link">000 2324 39493</a></p>
                             </div>
                         </li>
                     </ul>
@@ -146,7 +145,7 @@
             </div>
 
             <hr style="margin-top: -0.1rem;">
-            <p style="font-weight: 700; text-align: center; margin-bottom: -0.3rem; margin-top: -0.3rem;">&copy; Rehab 2023 | All Rights
+            <p style="font-weight: 700; text-align: center; margin-bottom: -0.3rem; margin-top: -0.3rem;">&copy; Palingenesis 2023 | All Rights
                 Reserved by DeezGroup</p>
         </div>
     </footer>
