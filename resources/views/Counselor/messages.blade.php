@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-<meta http-equiv="refresh" content="30">
 <link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
 <div class="container">
     <div class="row justify-content-center">

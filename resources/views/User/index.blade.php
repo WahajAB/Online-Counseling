@@ -32,7 +32,7 @@
                                                 </div>
                                                 <div>
                                                     <a href="{{ route('message_counselor', ['id' => $counselor->id]) }}" class="btn btn-success btn-sm text-center">{{ __('Message') }}</a>
-                                                    <a href="{{ route('call_counselor', ['id' => $counselor->id]) }}" class="btn btn-success btn-sm text-center" style="margin-left: 2rem; width: 4rem;">{{ __('Call') }}</a>
+                                                    <a href="{{ route('call', ['id' => $counselor->id]) }}" class="btn btn-success btn-sm text-center" style="margin-left: 2rem; width: 4rem;">{{ __('Call') }}</a>
                                                 </div>
                                             </div>
                                         </li>

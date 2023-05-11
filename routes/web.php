@@ -23,7 +23,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 // Route::get('/user', [App\Http\Controllers\UserController::class, 'showCounselors'])->name('User.index')->middleware('verified');
 Route::get('/user', [App\Http\Controllers\UserController::class, 'showCounselors'])->name('User.index');
-Route::get('/user/call/{id}', [App\Http\Controllers\UserController::class, 'callCounselor'])->name('call_counselor');
 // Route::get('/counselor', [App\Http\Controllers\CounselorController::class, 'index'])->name('Counselor.index')->middleware('verified');
 Route::get('/counselor', [App\Http\Controllers\CounselorController::class, 'index'])->name('Counselor.index');
 Route::get('/user/messages', [App\Http\Controllers\UserController::class, 'messages'])->name('User.messages');
@@ -34,9 +33,9 @@ Route::post('/user/messages/{id}', [App\Http\Controllers\UserController::class, 
 Route::post('/counselor/messages/{id}', [App\Http\Controllers\CounselorController::class, 'replyUsers'])->name('reply_users');
 
 
-Route::get('/call', [callcontroller::class, 'index'])->name('call');
+Route::get('/user/call/{id}', [callcontroller::class, 'index'])->name('call');
 
-Route::post("/createMeeting", [MeetingController::class, 'createMeeting'])->name("createMeeting");
+Route::post("/user/createMeeting", [MeetingController::class, 'createMeeting'])->name("createMeeting");
 
 Route::post("/validateMeeting", [MeetingController::class, 'validateMeeting'])->name("validateMeeting");
 
