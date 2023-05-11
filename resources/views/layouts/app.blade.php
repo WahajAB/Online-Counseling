@@ -146,7 +146,7 @@
             </div>
 
             <hr style="margin-top: -0.1rem;">
-            <p style="text-align: center; margin-bottom: -0.3rem; margin-top: -0.3rem;">&copy; Rehab 2023 | All Rights
+            <p style="font-weight: 700; text-align: center; margin-bottom: -0.3rem; margin-top: -0.3rem;">&copy; Rehab 2023 | All Rights
                 Reserved by DeezGroup</p>
         </div>
     </footer>

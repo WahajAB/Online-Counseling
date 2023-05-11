@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<meta http-equiv="refresh" content="30">
 <link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
 <div class="container">
     <div class="row justify-content-center">
@@ -27,6 +28,7 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <meta http-equiv="refresh" content="30">
                                 @foreach($sortedMessages as $message)
                                     <tr class="align-middle">
                                         <td>{{ $message->user->name }}</td>
