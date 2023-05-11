@@ -35,9 +35,9 @@ Route::post('/counselor/messages/{id}', [App\Http\Controllers\CounselorControlle
 
 Route::get('/user/call/{id}', [callcontroller::class, 'index'])->name('call');
 
-Route::post("/user/createMeeting", [MeetingController::class, 'createMeeting'])->name("createMeeting");
 
 Route::post("/validateMeeting", [MeetingController::class, 'validateMeeting'])->name("validateMeeting");
+Route::post("/user/createMeeting/{id}", [MeetingController::class, 'createMeeting'])->name("createMeeting");
 
 Route::get("/meeting/{meetingId}", function($meetingId) {
 

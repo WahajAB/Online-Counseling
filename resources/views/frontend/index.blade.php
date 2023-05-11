@@ -3,16 +3,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
-    <section class= "text-white" style="position: relative; z-index: 2; margin-top: -3.5rem; padding-top: 8rem; padding-bottom: 8rem; background-color: #005761;background-size: cover; background-image: url('{{ url('frontend/images/hero-bg.png') }}');">
+    <section class= "text-white" style="position: relative; z-index: 2; margin-top: -3.5rem; padding-top: 6rem; padding-bottom: 6rem; background-color: #005761; background-size: cover; background-image: url('{{ url('frontend/images/hero-bg.png') }}');">
         <div class="container ">
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <p class="fs-5" style="margin-top: -2rem; font-weight: 400;">Welcome To Palingenesis!</p>
-                    <h1 class="display-1" style="font: 6rem bold; font-weight: 600;">Convenient and affordable therapy, anywhere and anytime.</h1>
+                    <h1 class="display-1" style="font: 6rem bold; font-weight: 300;">Convenient and affordable therapy, anywhere and anytime.</h1>
                 </div>
                 <div class="col-md-6">
-                    <img src="{{ url('frontend/images/hero-banner.png') }}" width="560" height="517" loading="eager"
-                        alt="hero banner" class="w-100">
+                    <img src="{{ url('frontend/images/hero-banner.png') }}" width="590" height="517" loading="eager"
+                        alt="hero banner" class="w-90">
                 </div>
             </div>
         </div>
