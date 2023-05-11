@@ -1,14 +1,14 @@
 @extends('layouts.app')
 @section('content')
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
     <section class= "text-white" style="position: relative; z-index: 2; margin-top: -3.5rem; padding-top: 6rem; padding-bottom: 6rem; background-color: #005761; background-size: cover; background-image: url('{{ url('frontend/images/hero-bg.png') }}');">
         <div class="container ">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div style="font-family: ;" class="col-md-6">
                     <p class="fs-5" style="margin-top: -2rem; font-weight: 400;">Welcome To Palingenesis!</p>
-                    <h1 class="display-1" style="font: 6rem bold; font-weight: 300;">Convenient and affordable therapy, anywhere and anytime.</h1>
+                    <h1 class="display-1" style="font: 4rem bold; font-weight: 300;font-family:Nunito">Convenient and affordable therapy, anywhere and anytime.</h1>
                 </div>
                 <div class="col-md-6">
                     <img src="{{ url('frontend/images/hero-banner.png') }}" width="590" height="517" loading="eager"
@@ -24,8 +24,8 @@
                     <div class="card-body">
                         <img src="{{ url('frontend/images/icon-1.png') }}" width="71" height="71" loading="lazy"
                             alt="icon">
-                        <h3 class="card-title">Title {{ 1 }}</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        <h3 style="text-align: justify;" class="card-title">Confidential</h3>
+                        <p style="text-align: justify; font-family:'Nunito';" class="card-text">Rest assured knowing that your sessions are completely confidential, ensuring a safe and secure therapeutic space.</p>
                     </div>
                 </div>
             </div>
@@ -34,8 +34,8 @@
                     <div class="card-body">
                         <img src="{{ url('frontend/images/icon-2.png') }}" width="71" height="71" loading="lazy"
                             alt="icon">
-                        <h3 class="card-title">Title {{ 1 }}</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        <h3 class="card-title">Accessible</h3>
+                        <p style="text-align: justify;" class="card-text">Enjoy therapy that is readily available and easily accessible to help you prioritize your mental well-being.</p>
                     </div>
                 </div>
             </div>
@@ -44,8 +44,8 @@
                     <div class="card-body">
                         <img src="{{ url('frontend/images/icon-3.png') }}" width="71" height="71" loading="lazy"
                             alt="icon">
-                        <h3 class="card-title">Title {{ 1 }}</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        <h3 class="card-title">Empathy</h3>
+                        <p style="text-align: justify;" class="card-text">Experience the compassionate support of dedicated professionals who empathize and understand your unique journey.</p>
                     </div>
                 </div>
             </div>
@@ -54,8 +54,8 @@
                     <div class="card-body">
                         <img src="{{ url('frontend/images/icon-4.png') }}" width="71" height="71" loading="lazy"
                             alt="icon">
-                        <h3 class="card-title">Title {{ 1 }}</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        <h3 class="card-title">Virtual</h3>
+                        <p style="text-align: justify;" class="card-text">Experience therapy from the comfort of your own space, eliminating the need for travel or commuting.</p>
                     </div>
                 </div>
             </div>
@@ -64,8 +64,7 @@
 
     <section class="container py-5">
         <div class="text-center">
-            <p class="fs-5" id="listing-label">World Class Experts</p>
-            <h2 class="h3">Offering Specialists For</h2>
+            <p class="fs-3" id="listing-label">World Class Experts Offering:</p>
         </div>
         <div class="row text-center">
             <div class="col">
@@ -73,8 +72,8 @@
                     <div class="card-body">
                         <img src="{{ url('frontend/images/icon-5.png') }}" width="71" height="71" loading="lazy"
                             alt="icon">
-                        <h3 class="card-title">Title {{ 1 }}</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        <h3 class="card-title">Mindfulness-Based Therapy</h3>
+                        <p class="card-text">Incorporate mindfulness practices to enhance self-awareness and reduce stress and anxiety.</p>
                     </div>
 
             </div>
@@ -83,8 +82,8 @@
                     <div class="card-body">
                         <img src="{{ url('frontend/images/icon-6.png') }}" width="71" height="71" loading="lazy"
                             alt="icon">
-                        <h3 class="card-title">Title {{ 1 }}</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        <h3 class="card-title">Solution-Focused Brief Therapy (SFBT)</h3>
+                        <p class="card-text">Focus on identifying solutions and setting achievable goals in a time-limited manner.</p>
 
                 </div>
             </div>
