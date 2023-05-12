@@ -13,7 +13,10 @@
                         </div>
                     @endif
                     @php
-                        $sortedMessages = $messages->sortByDesc('created_at');
+                    $sortedMessages = $messages->sortByDesc('created_at')->map(function ($message) {
+                        $message->message = preg_replace('/\b(http|https):\/\/[^\s]+/', '<a href="$0" target="_blank">$0</a>', $message->message);
+                        return $message;
+                    });
                     @endphp
                     <div class="table-responsive">
                         <table class="table table-bordered table-striped table-hover">
@@ -33,7 +36,7 @@
                                     <tr class="align-middle">
                                         <td>{{ $message->user->name }}</td>
                                         <td>{{ $message->subject }}</td>
-                                        <td>{{ $message->message }}</td>
+                                        <td>{!! $message->message !!}</td>
                                         <td>{{ $message->created_at }}</td>
                                         <td>
                                             <form method="GET" action="{{ route('reply_user', ['id' => $message->user->id]) }}">@csrf
