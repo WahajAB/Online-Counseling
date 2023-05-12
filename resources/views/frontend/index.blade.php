@@ -8,7 +8,7 @@
             <div class="row align-items-center">
                 <div style="font-family: ;" class="col-md-6">
                     <p class="fs-5" style="margin-top: -2rem; font-weight: 400;">Welcome To Palingenesis!</p>
-                    <h1 class="display-1" style="font: 4rem bold; font-weight: 300;font-family:Nunito">Convenient and affordable therapy, anywhere and anytime.</h1>
+                    <h1 class="" style="font: 4rem bold; font-weight: 300;font-family:Nunito">Convenient and affordable therapy, anywhere and anytime.</h1>
                 </div>
                 <div class="col-md-6">
                     <img src="{{ url('frontend/images/hero-banner.png') }}" width="590" height="517" loading="eager"
@@ -18,7 +18,7 @@
         </div>
     </section>
     <section class="container py-5">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 pt-5">
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
@@ -63,8 +63,8 @@
     </section>
 
     <section class="container py-5">
-        <div class="text-center">
-            <p class="fs-3" id="listing-label">World Class Experts Offering:</p>
+        <div class="text-center pb-5">
+            <p class="fs-2">World Class Experts Offering:</p>
         </div>
         <div class="row text-center">
             <div class="col">

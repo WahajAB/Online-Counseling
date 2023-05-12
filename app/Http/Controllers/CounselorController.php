@@ -22,6 +22,8 @@ class CounselorController extends Controller
     
         return view('counselor.messages', compact('messages'));
     }
+
+
     public function replyUser($id)
     {
         $user = User::findOrFail($id);

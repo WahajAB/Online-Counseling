@@ -112,14 +112,14 @@
     <footer class="footer"
         style="background-size: cover; background-image: url({{ url('frontend/images/footer-bg.png') }})">
         <div class="container">
-            <div class="row" style="margin-top: 0.5rem;">
-                <div class="col-sm-6" style="padding-left: 6rem;">
-                    <h5><u>About Us</u></h5>
-                    <p>
+            <div class="row" style="margin-top: 0.5rem; padding-top: 1rem;">
+                <div class="col-sm-6" style="padding-left: 1rem;">
+                    <h5>About Us</h5>
+                    <p class="col-sm-8">
                     At Palingenesis, we are committed to providing a safe, inclusive, and compassionate space for individuals to access free therapy, empowering them to thrive and prioritize their mental well-being.</p>
                     
                 </div>
-                <div class="col-sm-6" style="padding-left: 17rem;">
+                <div class="col-sm-6" style="padding-left: 23rem;">
                     <h5>Contact Us</h5>
                     <ul class="contact-list has-after">
                         <li class="contact-item">
@@ -144,7 +144,7 @@
                 </div>
             </div>
 
-            <hr style="margin-top: -0.1rem;">
+            <hr>
             <p style="font-weight: 700; text-align: center; margin-bottom: -0.3rem; margin-top: -0.3rem;">&copy; Palingenesis 2023 | All Rights
                 Reserved by DeezGroup</p>
         </div>

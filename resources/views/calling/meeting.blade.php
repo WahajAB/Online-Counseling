@@ -18,7 +18,7 @@
     
                 <div class="mt-2">
                     
-                    <div class="rounded-3xl bg-gray-900" style="width: 50rem; margin-left: 2.5rem;">
+                    <div class="rounded-3xl bg-gray-900 ml-7 mr-7">
                         <video id='waitingAreaLocalVideo' class="h-96" autoplay muted></video>
                     </div>
     
@@ -66,14 +66,14 @@
 
         <div id='meetingView' class="hidden space-x-4 p-5">
 
-            <div id="activeSpeakerContainer" class="bg-gray-900 rounded-3xl" style="width: 90rem;">
+            <div id="activeSpeakerContainer" class="bg-gray-900 rounded-3xl">
                 <video id="activeSpeakerVideo" src="" autoplay class="object-contain w-full rounded-t-3xl"></video>
                 <div id="activeSpeakerUsername" class="hidden absolute h-8 w-full bg-gray-700 rounded-b-3xl bottom-0 text-white text-center font-bold pt-1">
                     
                 </div>
             </div>  
 
-            <div id="remoteParticipantContainer" class="flex flex-col">
+            <div id="remoteParticipantContainer">
                 <div id="localParticiapntContainer" class="w-48 h-48 rounded-3xl bg-gray-900 relative">
                     <video id="localVideoTag" src="" autoplay class="object-contain w-full rounded-t-3xl"></video>
                     <div id="localUsername" class="absolute h-8 w-full bg-gray-700 rounded-b-3xl bottom-0 text-white text-center font-bold pt-1">
@@ -82,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="text-center">
+            <div class="text-center pt-5">
                 <button id='toggleMicrophone' class="bg-gray-400 w-10 h-10 rounded-md p-2">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
                 </button>
