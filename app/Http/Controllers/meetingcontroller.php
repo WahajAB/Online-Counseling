@@ -24,7 +24,7 @@ class MeetingController extends Controller
         $message->counselor_id = $id;
         $name = auth()->user()->name;
         $message->subject = "$name is inviting you to a meeting!";
-        $message->message = "Please Copy/Paste the Following Link In Your Browser to Join the Meeting: http://127.0.0.1:8000/meeting/{$roomName}";
+        $message->message = "Click this URL to Join the Meeting: http://127.0.0.1:8000/meeting/{$roomName}";
 
         $message->save();
         
