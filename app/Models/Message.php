@@ -12,4 +12,11 @@ class Message extends Model
     {
     return $this->belongsTo(User::class, 'user_id');
     }
+    public function deleteMessage($id)
+    {
+    $message = Message::find($id);
+    $message->delete();
+
+    return redirect()->back()->with('status', 'Message deleted successfully.');
+    }
 }

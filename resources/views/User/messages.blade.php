@@ -4,7 +4,7 @@
 <link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-11">
             <div class="card">
                 <div class="card-header text-center" style="font-size: 1.5rem; font-weight:700;">{{ __('User Messages') }}</div>
                 <div class="card-body">
@@ -25,8 +25,10 @@
                                     <th>Message</th>
                                     <th>Received</th>
                                     <th>Action</th>
+                                    <th>Delete</th>
                                 </tr>
                             </thead>
+                            
                             <tbody>
                                 <meta http-equiv="refresh" content="30">
                                 @foreach($sortedMessages as $message)
@@ -38,6 +40,12 @@
                                         <td>
                                             <form method="GET" action="{{ route('message_counselor', ['id' => $message->user->id]) }}">@csrf
                                                 <button type="submit" class="btn btn-primary">Reply</button>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <form method="POST" action="{{ route('delete_message', ['id' => $message->id]) }}">@csrf
+                                                
+                                                <button type="submit" class="btn btn-danger">Delete</button>
                                             </form>
                                         </td>
                                     </tr>
