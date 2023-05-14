@@ -66,6 +66,10 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
+                        <li class="nav-item" style="padding-right: 50px;">
+                            <a href="{{ route('info') }}" class="btn btn-primary"
+                                style="font-size: 1.1rem;">Info</a>
+                        </li>
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item" style="padding-right: 50px;">
@@ -81,11 +85,11 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="btn btn-primary dropdown-toggle" href="/user" role="button"
+                                <a id="navbarDropdown" class="btn btn-primary dropdown-toggle"  style="font-size: 1.1rem;" href="/user" role="button"
                                     data-bs-toggle="dropdown">
                                     {{ Auth::user()->name }}
                                 </a>
-                                <div class="dropdown-menu dropdown-menu-end mt-1" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('login') }}">{{ __('Dashboard') }}</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
