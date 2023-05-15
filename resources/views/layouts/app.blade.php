@@ -123,7 +123,7 @@
                     At Palingenesis, we are committed to providing a safe, inclusive, and compassionate space for individuals to access free therapy, empowering them to thrive and prioritize their mental well-being.</p>
                     
                 </div>
-                <div class="col-sm-6" style="padding-left: 23rem;">
+                <div class="col-sm-6" style="padding-left: 22rem;">
                     <h5>Contact Us</h5>
                     <ul class="contact-list has-after">
                         <li class="contact-item">
@@ -131,7 +131,7 @@
                                 <ion-icon name="mail-open-outline"></ion-icon>
                             </div>
                             <div style="padding-bottom: 5px;">
-                                <p>Email : <a href="mailto:contact@website.com"
+                                <p>Email: <br><a href="mailto:contact@website.com"
                                         class="contact-link">Palingenesis@gmail.com</a></p>
                             </div>
                         </li>
@@ -140,7 +140,7 @@
                                 <ion-icon name="logo-linkedin"></ion-icon>
                             </div>
                             <div>
-                                <p> Linkedin: <a href="linkedin.com/in/Palingenesis" >linkedin.com/in/Palingenesis</a>
+                                <p> Linkedin: <br><a href="linkedin.com/in/Palingenesis" >linkedin.com/in/Palingenesis</a>
                                 </p>
                             </div>
                         </li>
