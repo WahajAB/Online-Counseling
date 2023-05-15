@@ -102,7 +102,7 @@
             </div>
         </div>
 
-        <div id="leaveMeetingView" class="hidden" style="margin-top: 15rem;">
+        <div id="leaveMeetingView" class="hidden">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="card col-md-8 p-0">
