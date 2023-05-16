@@ -1,16 +1,13 @@
 @extends('layouts.app')
 @section('content')
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <section class= "text-white" style="position: relative; z-index: 2; margin-top: -3.5rem; padding-top: 6rem; padding-bottom: 6rem; background-color: #005761; background-size: cover; background-image: url('{{ url('frontend/images/hero-bg.png') }}');">
         <div class="container ">
             <div class="row align-items-center">
-                <div style="font-family: ;" class="col-md-6">
+                <div class="col-md-6">
                     <p class="fs-5" style="margin-top: -2rem; font-weight: 400;">Welcome To Palingenesis!</p>
-                    <h1 class="" style="font: 4rem bold; font-weight: 300;font-family:Nunito">Convenient and affordable therapy, anywhere and anytime.</h1>
+                    <h1 style="font: 4rem bold; font-weight: 300; font-family: Nunito;">Convenient and affordable therapy, anywhere and anytime.</h1>
                 </div>
                 <div class="col-md-6">
                     <img src="{{ url('frontend/images/hero-banner.png') }}" loading="eager"
