@@ -24,6 +24,8 @@ Route::get('/user', [App\Http\Controllers\UserController::class, 'showCounselors
 Route::get('/counselor', [App\Http\Controllers\CounselorController::class, 'index'])->name('Counselor.index')->middleware('CheckRole:1');
 Route::get('/user/messages', [App\Http\Controllers\UserController::class, 'messages'])->name('User.messages')->middleware('CheckRole:0');
 Route::get('/counselor/messages', [App\Http\Controllers\CounselorController::class, 'messages'])->name('Counselor.messages');
+Route::get('/counselor/reviews', [App\Http\Controllers\CounselorController::class, 'reviews'])->name('Counselor.reviews');
+
 Route::get('/user/message/{id}', [App\Http\Controllers\UserController::class, 'messageCounselor'])->name('message_counselor')->middleware('CheckRole:0');
 Route::get('/counselor/message/{id}', [App\Http\Controllers\CounselorController::class, 'replyUser'])->name('reply_user')->middleware('CheckRole:1');
 Route::post('/user/messages/{id}', [App\Http\Controllers\UserController::class, 'messageCounselors'])->name('message_counselors')->middleware('CheckRole:0');
@@ -31,6 +33,7 @@ Route::post('/counselor/messages/{id}', [App\Http\Controllers\CounselorControlle
 Route::get('/user/call/{id}', [App\Http\Controllers\callcontroller::class, 'index'])->name('call')->middleware('CheckRole:0');
 Route::post("/validateMeeting", [App\Http\Controllers\MeetingController::class, 'validateMeeting'])->name("validateMeeting");
 Route::post("/user/createMeeting/{id}", [App\Http\Controllers\MeetingController::class, 'createMeeting'])->name("createMeeting");
+
 Route::post('/delete_message/{id}', [App\Models\Message::class, 'deleteMessage'])->name("delete_message");
 Route::get("/{id}/meeting/{meetingId}", function($id, $meetingId) {
 
@@ -41,3 +44,5 @@ Route::get("/{id}/meeting/{meetingId}", function($id, $meetingId) {
         'ID' => $id
     ]);
 });
+Route::get("/rating/{id}", [App\Http\Controllers\RatingController::class, 'Rating'])->name("Rating");
+Route::post("/rate/{id}", [App\Http\Controllers\RatingController::class, 'rate'])->name("rate");

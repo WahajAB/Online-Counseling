@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-11">
             <div class="card">
-                <div class="card-header text-center" style="font-size: 1.5rem; font-weight:700;">{{ __('User Messages') }}</div>
+                <div class="card-header text-center" style="font-size: 1.5rem; font-weight:700;">{{ __('Your Messages') }}</div>
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
