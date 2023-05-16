@@ -42,6 +42,7 @@ class UserController extends Controller
     public function callCounselor($id)
     {
         $counselor = User::findOrFail($id);
+
         return view('call_counselor', compact('counselor'));
     }
     public function showCounselors()
