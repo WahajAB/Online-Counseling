@@ -114,7 +114,7 @@
 
     </div>
     <footer class="footer"
-        style="background-size: cover; overflow: hidden; background-image: url({{ url('frontend/images/footer-bg.png') }})">
+        style="background-size: cover;overflow: hidden; background-image: url({{ url('frontend/images/footer-bg.png') }})">
         <div class="container">
             <div class="row" style="margin-top: 0.5rem; padding-top: 1rem;">
                 <div class="col-sm-6" style="padding-left: 1rem;">
@@ -124,27 +124,28 @@
                     
                 </div>
                 <div class="col-sm-6" id="hero1" style="padding-left: 22rem;">
-                    <h5>Contact Us</h5>
-                    <ul class="contact-list has-after">
-                        <li class="contact-item">
-                            <div class="item-icon">
-                                <ion-icon name="mail-open-outline"></ion-icon>
-                            </div>
-                            <div style="padding-bottom: 5px;">
-                                <p>Email: <br><a href="mailto:contact@website.com"
-                                        class="contact-link">Palingenesis@gmail.com</a></p>
-                            </div>
-                        </li>
-                        <li class="contact-item">
-                            <div class="item-icon">
-                                <ion-icon name="logo-linkedin"></ion-icon>
-                            </div>
-                            <div>
-                                <p> Linkedin: <br><a href="linkedin.com/in/Palingenesis" >linkedin.com/in/Palingenesis</a>
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
+                <h5>Contact Us</h5>
+                <ul class="contact-list has-after">
+                    <li class="contact-item">
+                        <div class="item-icon" style="display: flex; align-items: center;">
+                            <ion-icon name="mail-open-outline" style="margin-right: 5px;"></ion-icon>
+                            <p style="margin-bottom: 0;">
+                                Email: <br>
+                                <a href="mailto:contact@website.com" class="contact-link">Palingenesis@gmail.com</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="item-icon" style="display: flex; align-items: center;">
+                            <ion-icon name="logo-linkedin" style="margin-right: 5px;"></ion-icon>
+                            <p style="margin-bottom: 0;">
+                                Linkedin: <br>
+                                <a href="linkedin.com/in/Palingenesis">linkedin.com/in/Palingenesis</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
                 </div>
             </div>
 
