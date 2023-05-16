@@ -137,26 +137,9 @@
                 <div class="card col-md-8 p-0">
                     <div class="card-header text-center" style="font-weight:700; font-size: 1.5rem;"> You have left the
                         meeting! </div>
-                    <div class='card-body text-center' style='font-weight:700; font-size: 1.5rem;'> Rate the meeting
-                        <form>
-                            <div class="form-check form-check-inline"> <input class="form-check-input" type="radio"
-                                    name="rating" value="1"> <label class="form-check-label"
-                                    title="1 star">1</label> </div>
-                            <div class="form-check form-check-inline"> <input class="form-check-input" type="radio"
-                                    name="rating" value="2">2<label class="form-check-label"
-                                    title="2 stars"></label> </div>
-                            <div class="form-check form-check-inline"> <input class="form-check-input" type="radio"
-                                    name="rating" value="3">3<label class="form-check-label"
-                                    title="3 stars"></label> </div>
-                            <div class="form-check form-check-inline"> <input class="form-check-input" type="radio"
-                                    name="rating" value="4">4<label class="form-check-label"
-                                    title="4 stars"></label> </div>
-                            <div class="form-check form-check-inline"> <input class="form-check-input" type="radio"
-                                    name="rating" value="5">5<label class="form-check-label"
-                                    title="5 stars"></label> </div>
-                            <button type="submit" class="btn btn-primary ">Submit Rating</button>
-                        </form>
-                    </div>
+                    @if(auth()->user()->role==0) 
+                        <div class='card-body'><a type="button" style="margin-left: 20rem; margin-right: 20rem;" class='btn btn-primary text-center' href="/rating/{{$ID}}">Rate The Counselor</a></div>
+                    @endif
                 </div>
             </div>
         </div>

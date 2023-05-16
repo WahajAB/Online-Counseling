@@ -23,7 +23,7 @@ class MeetingController extends Controller
         $message->counselor_id = $id;
         $name = auth()->user()->name;
         $message->subject = "$name is inviting you to a meeting!";
-        $message->message = "Click this URL to Join the Meeting: http://127.0.0.1:8000/meeting/{$roomName}";
+        $message->message = "Click this URL to Join the Meeting: http://127.0.0.1:8000/{$id}/meeting/{$roomName}";
 
         $message->save();
         return redirect("/{$id}/meeting/{$roomName}"); // We will update this soon.

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Message;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Review;
 class CounselorController extends Controller
 {
     /**
@@ -22,7 +23,13 @@ class CounselorController extends Controller
     
         return view('counselor.messages', compact('messages'));
     }
-
+    public function reviews()
+    {
+        $user_id = auth()->user()->id;
+        $reviews = Review::where('counselor_id', $user_id)->get();
+    
+        return view('counselor.reviews', compact('reviews'));
+    }
 
     public function replyUser($id)
     {

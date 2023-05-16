@@ -8,8 +8,8 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
-                        <h3 style="display: inline-block; font-weight:700;">User Name:</h3>
-                        <h3 style="display: inline-block; margin-left: 8rem; font-weight:700;">{{$user->name }}</h3>
+                        <h3 style="display: inline-block; font-weight:700;">Name:</h3>
+                        <h3 style="display: inline-block; margin-inline: 14rem; font-weight:700;">{{$user->name }}</h3>
                       </div>
                     <div class="card-body">
                         @if (session('status'))
