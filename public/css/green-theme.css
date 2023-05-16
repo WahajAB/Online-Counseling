@@ -111,6 +111,10 @@
     font-size: 28px;
     margin-right: 12px;
 }
+.logo{
+    margin-left: -10rem;
+    margin-bottom: -1rem;
+ }
 
 @media (min-width: 1721px) {
     #activeSpeakerContainer {
@@ -158,6 +162,7 @@
     .w-90 {
         display: none;
     }
+
     #activeSpeakerContainer {
         margin-left: 0.25rem;
         width: calc(100% - 0.5rem);
@@ -169,7 +174,13 @@
         margin-top: 0.25rem;
         margin-left: 0.25rem;
     }
-    .navbar-collapse {
-        max-width: 50%;
+    .navbar-nav{
+        margin-right: -4rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
+    .logo{
+        margin-left: -12rem;
+        
+     }
 }
