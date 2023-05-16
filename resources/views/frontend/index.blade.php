@@ -3,6 +3,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <section class= "text-white" style="position: relative; z-index: 2; margin-top: -3.5rem; padding-top: 6rem; padding-bottom: 6rem; background-color: #005761; background-size: cover; background-image: url('{{ url('frontend/images/hero-bg.png') }}');">
         <div class="container ">
             <div class="row align-items-center">
@@ -31,7 +33,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <div class="card-body">
+                    <div  class="card-body">
                         <img src="{{ url('frontend/images/icon-2.png') }}" width="71" height="71" loading="lazy"
                             alt="icon">
                         <h3 class="card-title">Accessible</h3>
