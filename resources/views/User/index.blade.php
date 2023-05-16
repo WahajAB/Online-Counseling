@@ -29,13 +29,14 @@
                                 </div>
                                 <div class="modal-body">
                                     <ul class="list-group">
-                                        @foreach ($counselors as $counselor)
-                                        @php         
-                                        $reviews = \App\Models\Review::where('counselor_id', $counselor->id)->get();
-                                        $total = $reviews->sum('rating');
-                                        $count = $reviews->count();
-                                        $result = $total/$count;
-                                        @endphp
+                                    @foreach ($counselors as $counselor)
+                                    @php
+                                    $reviews = \App\Models\Review::where('counselor_id', $counselor->id)->get();
+                                    $total = $reviews->sum('rating');
+                                    $count = $reviews->count();
+                                    $result = ($count > 0) ? $total / $count : 0;
+                                    @endphp
+
                                         <li class="list-group-item">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div>
