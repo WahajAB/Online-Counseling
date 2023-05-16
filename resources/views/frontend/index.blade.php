@@ -11,8 +11,8 @@
                     <h1 class="" style="font: 4rem bold; font-weight: 300;font-family:Nunito">Convenient and affordable therapy, anywhere and anytime.</h1>
                 </div>
                 <div class="col-md-6">
-                    <img src="{{ url('frontend/images/hero-banner.png') }}" width="590" height="517" loading="eager"
-                        alt="hero banner" class="w-90">
+                    <img src="{{ url('frontend/images/hero-banner.png') }}" loading="eager"
+                        class="w-90" style="overflow: hidden;">
                 </div>
             </div>
         </div>

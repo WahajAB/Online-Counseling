@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('content')
+<link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
+
 <div class="container" style="min-width: 50%;">
     <div class="row justify-content-center">
         <div class="col-md-10">
@@ -81,4 +83,5 @@
         </div>
     </div>
 </div>
+
 @endsection

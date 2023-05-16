@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
 use App\Models\Message;
 use Illuminate\Http\Request;
-
 class MeetingController extends Controller
 {
     public function createMeeting(Request $request, $id) {
@@ -27,11 +26,10 @@ class MeetingController extends Controller
         $message->message = "Click this URL to Join the Meeting: http://127.0.0.1:8000/meeting/{$roomName}";
 
         $message->save();
-        
-        return redirect("/meeting/{$roomName}"); // We will update this soon.
+        return redirect("/{$id}/meeting/{$roomName}"); // We will update this soon.
     }
 
-    public function validateMeeting(Request $request) {
+    public function validateMeeting(Request $request, $id) {
         $METERED_DOMAIN = env('METERED_DOMAIN');
         $METERED_SECRET_KEY = env('METERED_SECRET_KEY');
 
@@ -44,7 +42,7 @@ class MeetingController extends Controller
 
 
         if ($response->status() === 200)  {
-            return redirect("/meeting/{$roomName}"); // We will update this soon
+            return redirect("/{$id}/meeting/{$roomName}"); 
         } else {
             return redirect()->back()->with('failure', 'No such room exists.');
         }

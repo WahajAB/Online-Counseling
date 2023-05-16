@@ -29,16 +29,15 @@ Route::get('/counselor/message/{id}', [App\Http\Controllers\CounselorController:
 Route::post('/user/messages/{id}', [App\Http\Controllers\UserController::class, 'messageCounselors'])->name('message_counselors')->middleware('CheckRole:0');
 Route::post('/counselor/messages/{id}', [App\Http\Controllers\CounselorController::class, 'replyUsers'])->name('reply_users')->middleware('CheckRole:1');
 Route::get('/user/call/{id}', [App\Http\Controllers\callcontroller::class, 'index'])->name('call')->middleware('CheckRole:0');
-
-
 Route::post("/validateMeeting", [App\Http\Controllers\MeetingController::class, 'validateMeeting'])->name("validateMeeting");
 Route::post("/user/createMeeting/{id}", [App\Http\Controllers\MeetingController::class, 'createMeeting'])->name("createMeeting");
 Route::post('/delete_message/{id}', [App\Models\Message::class, 'deleteMessage'])->name("delete_message");
-Route::get("/meeting/{meetingId}", function($meetingId) {
+Route::get("/{id}/meeting/{meetingId}", function($id, $meetingId) {
 
     $METERED_DOMAIN = env('METERED_DOMAIN');
     return view('calling/meeting', [
         'METERED_DOMAIN' => $METERED_DOMAIN,
-        'MEETING_ID' => $meetingId
+        'MEETING_ID' => $meetingId,
+        'ID' => $id
     ]);
 });

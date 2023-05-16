@@ -16,7 +16,7 @@
                 @endif
                 <div class="card-body" style="display: flex;  justify-content: center; align-items: center;">
 
-                            <form method="post" action="{{ route('validateMeeting') }}">
+                            <form method="post" action="{{ route('validateMeeting', ['id'=>$counselor]) }}">
                                 {{ csrf_field() }}
                                 <div class="mt-10 mb-11 flex">
                                     <div class="rounded-md shadow-sm relative flex items-stretch flex-grow focus-within:z-10">

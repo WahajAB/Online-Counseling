@@ -9,7 +9,6 @@
 @vite(['resources/sass/app.scss','resources/js/app.js'])
 
 <link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
-
 <div class="container" id="waitingArea">
     <div class="row justify-content-center">
         <div class="card col-md-8 p-0">
@@ -66,14 +65,14 @@
 
         <div id='meetingView' class="hidden space-x-4 p-5">
 
-            <div id="activeSpeakerContainer" class="bg-gray-900 rounded-3xl">
-                <video id="activeSpeakerVideo" src="" autoplay class="object-contain w-full rounded-t-3xl"></video>
+            <div id="activeSpeakerContainer" class=" bg-gray-900 rounded-3xl flex-1 flex relative">
+                <video id="activeSpeakerVideo" src="" autoplay class=" object-contain w-full rounded-t-3xl"></video>
                 <div id="activeSpeakerUsername" class="hidden absolute h-8 w-full bg-gray-700 rounded-b-3xl bottom-0 text-white text-center font-bold pt-1">
-                    
+                  
                 </div>
             </div>  
 
-            <div id="remoteParticipantContainer">
+            <div id="remoteParticipantContainer" class="flex flex-col space-y-4">
                 <div id="localParticiapntContainer" class="w-48 h-48 rounded-3xl bg-gray-900 relative">
                     <video id="localVideoTag" src="" autoplay class="object-contain w-full rounded-t-3xl"></video>
                     <div id="localUsername" class="absolute h-8 w-full bg-gray-700 rounded-b-3xl bottom-0 text-white text-center font-bold pt-1">
@@ -106,11 +105,21 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="card col-md-8 p-0">
-                        <div class="card-header text-center" style="font-weight:700; font-size: 1.5rem;">{{ __('You have left the meeting!') }}
-                        </div>
-                 
+                        <div class="card-header text-center" style="font-weight:700; font-size: 1.5rem;">{{ __('You have left the meeting!') }}</div>
+                        <div class='card-body text-center' style='font-weight:700; font-size: 1.5rem;'>Rate the meeting
+                        <form>
+                            <div>
+                                <input type="radio" name="rating" value="5" /><label title="5 stars"></label>
+                                <input type="radio" name="rating" value="4" /><label title="4 stars"></label>
+                                <input type="radio" name="rating" value="3" /><label title="3 stars"></label>
+                                <input type="radio" name="rating" value="2" /><label title="2 stars"></label>
+                                <input type="radio"name="rating" value="1" /><label title="1 star"></label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Rating</button>
+                        </form>  
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 @endsection
