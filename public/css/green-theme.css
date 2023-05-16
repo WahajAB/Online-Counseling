@@ -4,18 +4,17 @@
     --primary-color: hsl(183, 100%, 36%);
     --secondary-color: hsl(183, 100%, 36%);
     --text-color: #ffffff;
-  }
+}
 
-  
-  .card {
+.card {
     border-color: var(--primary-color);
-  }
-  
-  .card-header {
+}
+
+.card-header {
     background-color: var(--primary-color);
     color: var(--text-color);
-  }
-  .btn-danger{
+}
+.btn-danger {
     color: var(--text-color);
     padding: 12px 36px;
     display: flex;
@@ -23,8 +22,8 @@
     gap: 8px;
     overflow: hidden;
     font-weight: 700;
-  }
-  .btn-primary{
+}
+.btn-primary {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
     color: var(--text-color);
@@ -34,161 +33,143 @@
     gap: 8px;
     overflow: hidden;
     font-weight: 700;
-  }
+}
 
-  .btn-primary:hover {
+.btn-primary:hover {
     background-color: black;
     border-color: var(--primary-color);
     color: var(--text-color);
+}
 
-  }
-
-
-  .form-check-input:checked {
+.form-check-input:checked {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
-  }
-  
-  .form-check-input:checked:hover {
+}
+
+.form-check-input:checked:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
-  }
-  .footer {
+}
+.footer {
     background-color: #005761;
     color: var(--text-color);
     padding-top: 1rem;
     padding-bottom: 1rem;
-    
-  }
-  
-  .footer h5 {
+}
+
+.footer h5 {
     color: var(--text-color);
     font-weight: 700;
     font-size: 1.2rem;
-  }
-  
-  .footer a {
-    color: var(--text-color);
-    font-weight: 700;
-  }
-  
-  .footer address .text {
-    color: var(--text-color);
-    font-weight: 700;
-  }
-  
-  .footer hr {
-    border-color: var(--text-color);
-  }
-  
-  .footer p {
-    color: var(--text-color);
-    
-  }
-  
-  .footer .contact-item p {
-    margin: 0;
-    
-  }
-  
-  .footer .contact-item .item-icon ion-icon {
-    color: var(--text-color);
-    font-size: 28px;
-    margin-right: 12px;
-    
-  }
-  
-  .footer .contact-item .contact-link:hover {
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: 700;
-  }
-  
-  .footer .contact-item .contact-link {
-    color: #ffffff;
-  }
-  
-  .footer .contact-item .contact-link:hover {
-    color: var(--text-color);
-    text-decoration: none;
-  }
-  
-  .footer .address ion-icon {
-    color: var(--text-color);
-    font-size: 28px;
-    margin-right: 12px;
-  }
+}
 
-   @media (min-width: 1721px) {  
-    
+.footer a {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.footer address .text {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.footer hr {
+    border-color: var(--text-color);
+}
+
+.footer p {
+    color: var(--text-color);
+}
+
+.footer .contact-item p {
+    margin: 0;
+}
+
+.footer .contact-item .item-icon ion-icon {
+    color: var(--text-color);
+    font-size: 28px;
+    margin-right: 12px;
+}
+
+.footer .contact-item .contact-link:hover {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.footer .contact-item .contact-link {
+    color: #ffffff;
+}
+
+.footer .contact-item .contact-link:hover {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.footer .address ion-icon {
+    color: var(--text-color);
+    font-size: 28px;
+    margin-right: 12px;
+}
+
+@media (min-width: 1721px) {
     #activeSpeakerContainer {
-      margin-left: 15rem; 
-      width: calc(75% - 2rem);
+        margin-left: 15rem;
+        width: calc(75% - 2rem);
     }
-    
+
     #remoteParticipantContainer {
-      float: right; 
-      margin-top: -41.5rem;
+        float: right;
+        margin-top: -41.5rem;
     }
-    
+
     #localParticiapntContainer {
-      width: 13rem; 
-      height: 13rem; 
+        width: 12rem;
+        height: 12rem;
     }
-  }
-  
-  @media (max-width: 1720px) { 
-    
+}
+
+@media (max-width: 1720px) {
     #activeSpeakerContainer {
-      margin-left: 3rem; 
-      width: calc(100% - 2rem);
+        margin-left: 3rem;
+        width: calc(100% - 2rem);
     }
-    
+
     #remoteParticipantContainer {
-      float: none; 
-      margin-top: 1rem;
-      margin-left: 3rem; 
+        float: none;
+        margin-top: 1rem;
+        margin-left: 3rem;
     }
-    
-    #localParticiapntContainer {
-      width: 10rem; 
-      height: 10rem; 
-    }
-  }
-  
-  @media (max-width: 1480px) {
-    
+}
+
+@media (max-width: 1480px) {
     #activeSpeakerContainer {
-      margin-left: 1rem; 
-      width: calc(100% - 1rem);
+        margin-left: 1rem;
+        width: calc(100% - 1rem);
     }
-    
+
     #remoteParticipantContainer {
-      margin-top: 1rem;
-      margin-left: 1rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
     }
-    
-    #localParticiapntContainer {
-      width: 8rem; 
-      height: 8rem; 
+}
+
+@media (max-width: 1024px) {
+    .w-90 {
+        display: none;
     }
-  }  
-  
-  @media (max-width: 1024px) {
-    
     #activeSpeakerContainer {
-      margin-left: 0.25rem; 
-      width: calc(100% - 0.5rem);
+        margin-left: 0.25rem;
+        width: calc(100% - 0.5rem);
     }
-    
+    #hero1 {
+        margin-left: -21rem;
+    }
     #remoteParticipantContainer {
-      margin-top: 0.25rem;
-      margin-left: 0.25rem;
+        margin-top: 0.25rem;
+        margin-left: 0.25rem;
     }
-    
-    #localParticiapntContainer {
-      width: 6rem; 
-      height: 6rem; 
+    .navbar-collapse {
+        max-width: 50%;
     }
-  }
-  
+}
