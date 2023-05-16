@@ -54,7 +54,7 @@
 
 </head>
 
-<body style="background-size: auto;font-family:'Nunito' background-image: url('{{ url('frontend/images/hero-bg.png') }}');">
+<body style="background-size: cover; font-family:'Nunito'; background-image: url('{{ url('frontend/images/hero-bg.png') }}');">
     <div id="app">
         <nav class="navbar navbar-expand-md shadow-sm" style="padding: 12px 36px; background-color: #005761;">
             <div class="container">
@@ -78,13 +78,13 @@
                                 </li>
                             @endif
                             @if (Route::has('register'))
-                                <li class="nav-item">
+                                <li class="nav-item" style="padding-right: 50px;">
                                     <a href="{{ route('register') }}" class="btn btn-primary"
                                         style="font-size: 1.1rem;">Register</a>
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown" style="margin-right: 50px;">
                                 <a id="navbarDropdown" class="btn btn-primary dropdown-toggle"  style="font-size: 1.1rem;" href="/user" role="button"
                                     data-bs-toggle="dropdown">
                                     {{ Auth::user()->name }}
@@ -114,7 +114,7 @@
 
     </div>
     <footer class="footer"
-        style="background-size: cover; background-image: url({{ url('frontend/images/footer-bg.png') }})">
+        style="background-size: cover; overflow: hidden; background-image: url({{ url('frontend/images/footer-bg.png') }})">
         <div class="container">
             <div class="row" style="margin-top: 0.5rem; padding-top: 1rem;">
                 <div class="col-sm-6" style="padding-left: 1rem;">
@@ -123,7 +123,7 @@
                     At Palingenesis, we are committed to providing a safe, inclusive, and compassionate space for individuals to access free therapy, empowering them to thrive and prioritize their mental well-being.</p>
                     
                 </div>
-                <div class="col-sm-6" style="padding-left: 22rem;">
+                <div class="col-sm-6" id="hero1" style="padding-left: 22rem;">
                     <h5>Contact Us</h5>
                     <ul class="contact-list has-after">
                         <li class="contact-item">
