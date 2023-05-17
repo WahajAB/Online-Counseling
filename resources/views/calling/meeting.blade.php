@@ -59,8 +59,8 @@
                         </label>
                     </div>
 
-                    <div class="text-center mb-3 mt-1">
-                        <button id='joinMeetingBtn' class="btn btn-primary rounded-sm" style="margin-left: 22.5rem;">
+                    <div class="d-flex justify-content-center pb-3">
+                        <button id='joinMeetingBtn' class="btn btn-primary rounded-sm">
                             Join Meeting
                         </button>
                     </div>
@@ -138,8 +138,13 @@
                     <div class="card-header text-center" style="font-weight:700; font-size: 1.5rem;"> You have left the
                         meeting! </div>
                     @if(auth()->user()->role==0) 
-                        <div class='card-body'><a type="button" style="margin-left: 20rem; margin-right: 20rem;" class='btn btn-primary text-center' href="/rating/{{$ID}}">Rate The Counselor</a></div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                            <a type="button" class="btn btn-primary text-center" href="/rating/{{$ID}}">Rate The Counselor</a>
+                            </div>
+                        </div>
                     @endif
+                
                 </div>
             </div>
         </div>

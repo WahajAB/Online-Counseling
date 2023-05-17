@@ -9,7 +9,7 @@
                 <h1 style="font: 4rem bold; font-weight: 300; font-family: Nunito;">Convenient and affordable therapy, anywhere and anytime.</h1>
             </div>
             <div style="padding-left: 5.5rem;" class="col-md-4">
-                <img src="{{ url('frontend/images/hero-banner13.png') }}" loading="eager" class="w-90" height="600px;" width="600px" style="overflow: hidden;height:600px;width:600px;">
+                <img src="{{ url('frontend/images/hero-banner13.png') }}" loading="eager" class="w-90" height="600px;" width="600px" style="overflow: hidden; height:600px; width:600px;">
             </div>
         </div>
     </div>
