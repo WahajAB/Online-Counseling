@@ -1,7 +1,8 @@
 @extends('layouts.app')
 @section('content')
+<link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 <link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <section class="text-white" style="position: relative; z-index: 2; margin-top: -3.5rem; padding-top: 6rem; padding-bottom: 6rem; background-color: #005761; background-size: cover; background-image: url('{{ url('frontend/images/hero-bg.png') }}');">
     <div class="container ">
         <div class="row align-items-center">
@@ -81,9 +82,5 @@
         </div>
     </div>
 </section>
-<a href="#top" class="position-fixed bottom-0 end-0 m-4 text-primary" aria-label="back to top" data-back-top-btn>
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1.646 11.854a.5.5 0 0 1 .708 0l5-5a.5.5 0 0 1 .708-.708l5 5a.5.5 0 0 1-.708.708L8 7.207l-4.646 4.647a.5.5 0 0 1-.708 0z" />
-    </svg>
-</a>
+
 @endsection
