@@ -114,7 +114,7 @@
         </main>
 
     </div>
-    <footer class="footer" style="background-size: cover;overflow: hidden; background-image: url({{ url('frontend/images/footer-bg.png') }})">
+    <footer class="footer" style="background-size: cover; overflow: hidden; background-image: url({{ url('frontend/images/footer-bg.png') }})">
         <div class="container">
             <div class="row" style="margin-top: 0.5rem; padding-top: 1rem;">
                 <div class="col-sm-6" style="padding-left: 1rem;">

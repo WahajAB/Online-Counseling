@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <link href="{{ asset('css/green-theme.css') }}" rel="stylesheet">
-<section class="text-white" style="position: relative; z-index: 2; margin-top: -3.5rem; padding-top: 4rem; padding-bottom: 6rem; background-color: #005761; background-size: cover; background-image: url('{{ url('frontend/images/bg.png') }}');">
+<section class="text-white" style="position: relative; z-index: 2; margin-top: -3.5rem; padding-top: 4rem; padding-bottom: 6rem; background-color: #005761; background-size: cover; background-image: url('{{ url('frontend/images/hero-bg.png') }}');">
     <div class="container ">
         <div class="row align-items-center">
             <div class="col-md-6">
