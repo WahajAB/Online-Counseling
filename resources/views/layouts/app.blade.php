@@ -23,7 +23,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="/jquery/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.metered.ca/sdk/video/1.4.5/sdk.min.js"></script>
+
     <style>
         html {
             height: 100%;
@@ -59,7 +59,7 @@
 
     <script src="https://cdn.metered.ca/sdk/video/1.4.5/sdk.min.js"></script>
 
-    @vite(['resources/sass/app.scss','resources/js/app.js'])
+    @vite(['resources/css/app.css','resources/sass/app.scss','resources/js/app.js'])
 
 </head>
 
