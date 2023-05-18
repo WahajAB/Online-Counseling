@@ -92,6 +92,10 @@
         width: 12rem;
         height: 12rem;
     }
+    .w-90 {
+        margin-left: 7rem;
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 1720px) {
@@ -105,9 +109,15 @@
         margin-top: 1rem;
         margin-left: 3rem;
     }
+    .w-90 {
+        margin-left: 6rem;
+    }
 }
 
 @media (max-width: 1480px) {
+    .w-90 {
+        margin-left: 0rem;
+    }
     #activeSpeakerContainer {
         margin-left: 1rem;
         width: calc(100% - 1rem);
@@ -143,5 +153,9 @@
     .logo{
         margin-left: -12rem;
         
+     }
+     #hero2{
+        width: 300px;
+        height: 300px;
      }
 }

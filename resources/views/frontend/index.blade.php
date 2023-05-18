@@ -8,8 +8,8 @@
                 <p class="fs-5" style="margin-top: -2rem; font-weight: 400;">Welcome To Palingenesis!</p>
                 <h1 style="font: 4rem bold; font-weight: 300; font-family: Nunito;">Convenient and affordable therapy, anywhere and anytime.</h1>
             </div>
-            <div style="padding-left: 5.5rem;" class="col-md-4">
-                <img src="{{ url('frontend/images/hero-banner13.png') }}" loading="eager" class="w-90" height="600px;" width="600px" style="overflow: hidden; height:600px; width:600px;">
+            <div class="col-md-6">
+                <img src="{{ url('frontend/images/hero-banner13.png') }}" loading="eager" class="w-90">
             </div>
         </div>
     </div>
@@ -62,7 +62,7 @@
     <div class="row text-center">
         <div class="col">
             <div class="card-body">
-                <img src="{{ url('frontend/images/MBT.png') }}" width="400" height="400" loading="lazy" alt="icon">
+                <img src="{{ url('frontend/images/MBT.png') }}" id="hero2" width="400" height="400" loading="lazy" alt="icon">
                 <h2 class="card-title pb-3">Mindfulness-Based Therapy</h2>
                 <p class="card-text h5">Incorporate mindfulness practices to enhance self-awareness and reduce stress and anxiety.</p>
             </div>
@@ -71,7 +71,7 @@
         <div class="col">
 
             <div class="card-body">
-                <img src="{{ url('frontend/images/SFBT.png') }}" width="400" height="400" loading="lazy" alt="icon">
+                <img src="{{ url('frontend/images/SFBT.png') }}" id = "hero2" width="400" height="400" loading="lazy" alt="icon">
                 <h2 class="card-title pb-3">Solution-Focused Brief Therapy (SFBT)</h2>
                 <p class="card-text h5">Focus on identifying solutions and setting achievable goals in a time-limited manner.</p>
 
