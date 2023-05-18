@@ -26,7 +26,9 @@
                                     <label class="mb-3"for="remarks">Remarks</label>
                                         <textarea class="form-control" name="remarks" rows="10" placeholder="(Optional)"></textarea>
                               </div>
-                            <button type="submit" style="margin-left: 34rem;" class="btn btn-primary mt-4">Submit Rating</button>
+                              <div class="d-flex justify-content-center"> 
+                            <button type="submit" class="btn btn-primary mt-4">Submit Rating</button>
+                              </div>
                         </form>
                 </div>
         </div>

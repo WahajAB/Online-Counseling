@@ -18,9 +18,10 @@
                 <div class="mt-2">
 
                     <div class="rounded-3xl bg-gray-900 ml-7 mr-7">
+                        <div class="d-flex justify-content-center">
                         <video id='waitingAreaLocalVideo' class="h-96" autoplay muted></video>
+                        </div>
                     </div>
-
                     <div class="mt-3 text-center">
 
                         <button id='waitingAreaToggleMicrophone' class="bg-gray-400 w-10 h-10 rounded-md p-2">
