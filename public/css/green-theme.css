@@ -93,7 +93,7 @@
         height: 12rem;
     }
     .w-90 {
-        margin-left: 7rem;
+        margin-left: 8rem;
         overflow: hidden;
     }
 }
@@ -133,7 +133,6 @@
     .w-90 {
         display: none;
     }
-
     #activeSpeakerContainer {
         margin-left: 0.25rem;
         width: calc(100% - 0.5rem);
@@ -141,6 +140,7 @@
     #hero1 {
         margin-left: -21rem;
     }
+
     #remoteParticipantContainer {
         margin-top: 0.25rem;
         margin-left: 0.25rem;
