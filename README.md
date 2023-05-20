@@ -20,7 +20,7 @@
 
 ## Introduction 🌟
 
-Our team set out to solve a critical issue that Pakistan faces, an issue that threatens to rent asunder the very foundation of society if left untreated. Our application's objective was to assist addicts and the mentally ill who have been abandoned by society. We aimed to provide a platform accessible to anyone with an internet connection, breaking the barriers of geography and societal stigmatization. Through our web application, individuals can receive top-notch counseling and medical assistance to fight against their worst impulses and begin a new chapter in their lives.
+<p align="justify"> Our team set out to solve a critical issue that Pakistan faces, an issue that threatens to rent asunder the very foundation of society if left untreated. Our application's objective was to assist addicts and the mentally ill who have been abandoned by society. We aimed to provide a platform accessible to anyone with an internet connection, breaking the barriers of geography and societal stigmatization. Through our web application, individuals can receive top-notch counseling and medical assistance to fight against their worst impulses and begin a new chapter in their lives.</p>
 
 ## Problem Statement ❗️
 
