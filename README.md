@@ -1,4 +1,8 @@
 # Counseling Web Application
+![Screenshot 2023-05-20 124245](https://github.com/BasharSiddiqui/Drug-Counseling/assets/105674805/cbcb9aef-652f-4b86-9894-a4f4fa4937bf)
+![Screenshot 2023-05-20 124418](https://github.com/BasharSiddiqui/Drug-Counseling/assets/105674805/abb7f323-0d47-404e-b510-586ebf315656)
+![Screenshot 2023-05-20 124515](https://github.com/BasharSiddiqui/Drug-Counseling/assets/105674805/c19b1ba9-3b64-4bd5-bffe-51a9ea1415f5)
+![Screenshot 2023-05-20 124618](https://github.com/BasharSiddiqui/Drug-Counseling/assets/105674805/827b5f1a-85f5-4082-97cc-15f355efe1b0)
 
 ## Contributors  👥 
 
@@ -44,7 +48,6 @@ The implementation process involved the following steps:
 6. Collaboration, final touches, and ongoing support.
 
 ## Conclusion 🎉
-![Screenshot 2023-05-20 124245](https://github.com/BasharSiddiqui/Drug-Counseling/assets/105674805/cbcb9aef-652f-4b86-9894-a4f4fa4937bf)
 
 The development and implementation of our counseling web application using Laravel proved to be a challenging but rewarding process. We successfully addressed the barriers to accessing counseling services by providing a remote platform with user privacy as a priority. The application facilitates effective communication between users and counselors, offers information on addiction and mental illnesses, and presents a visually appealing and user-friendly interface.
 
